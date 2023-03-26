@@ -1,0 +1,22 @@
+npm i --save-dev prisma typescript ts-node @types/node nodemon
+npx prisma init --datasource-provider postgresql
+
+
+// settings.json
+"[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+}
+or npx prisma format
+npx prisma migrate dev --name init
+
+// install client that allows us to generate and use this client
+npm i @prisma/client
+
+to manually regenerate your client
+npx prisma generate
+then made script.ts file
+
+field type modifiers ? and []
+
+npx prisma migrate dev
